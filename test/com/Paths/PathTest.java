@@ -13,10 +13,16 @@ public class PathTest{
 		assertEquals(true, paths.pathFinder("Banglore","Singapore",visitedCity));
 	}
 	@Test
-	public void test_should_give_false_for_banglore_to_tokyo(){
+	public void test_should_give_true_for_banglore_to_tokyo(){
         List<String> visitedCity = paths.getPath("Banglore", "Tokyo");
         assertEquals(true, paths.pathFinder("Banglore","Tokyo",visitedCity));
 	}
+    @Test
+    public void test_should_give_true_for_singapore_to_tokyo(){
+
+        List<String> visitedCity = paths.getPath("Singapore", "Tokyo");
+        assertEquals(true, paths.pathFinder("Singapore","Tokyo",visitedCity));
+    }
 	@Test
 	public void test_should_give_true_for_singapore_to_seoul(){
         List<String> visitedCity = paths.getPath("Singapore","seoul");
