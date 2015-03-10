@@ -27,25 +27,25 @@ public class PathTest{
         List<String> visitedCity = paths.getPath("Singapore","Dubai");
         assertEquals(true, paths.pathFinder("Singapore","Dubai",visitedCity));
 	}
-//	@Test
-//	public void test_should_give_false_for_singapore_to_beijing(){
-//        List<String> visitedCity = paths.getPath("Singapore","Beijing");
-//        assertEquals(true, paths.pathFinder("Singapore","Beijing",visitedCity));
-//	}
-//	@Test
-//	public void test_should_give_noCity_for_singapore_to_lucknow(){
-//		String Destination = "Lucknow";
-//        List<String> visitedCity = paths.getPath("Singapore",Destination);
-//        try{
-//			paths.pathFinder("Singapore",Destination,visitedCity);
-//		}
-//		catch(Exception e){
-//			assertEquals("the destination station "+Destination+" is not present in database", e.getMessage());
-//		}
-//	}
+	@Test
+	public void test_should_give_false_for_singapore_to_beijing(){
+        List<String> visitedCity = paths.getPath("Singapore","Beijing");
+        assertEquals(true, paths.pathFinder("Singapore","Beijing",visitedCity));
+	}
+	@Test
+	public void test_should_give_noCity_for_singapore_to_lucknow(){
+		String Destination = "Lucknow";
+        List<String> visitedCity = paths.getPath("Singapore",Destination);
+        try{
+			paths.pathFinder("Singapore",Destination,visitedCity);
+		}
+		catch(Exception e){
+			assertEquals("the destination station "+Destination+" is not present in database", e.getMessage());
+		}
+	}
 	@Test
 	public void test_should_give_true_for_Banglore_to_Tokyo(){
-        List<String> visitedCity = paths.getPath("Bangalore", "Tokyo");
+        List<String> visitedCity = paths.getPath("Banglore", "Tokyo");
         assertEquals(true,paths.pathFinder("Banglore","Tokyo",visitedCity));
 	}
 

@@ -13,24 +13,24 @@ class Paths{
 		db.put("Banglore",fromBanglore);
 
 		List<String> singapore = new ArrayList<String>();
-		singapore.add("Banglore");
+//		singapore.add("Banglore");
 		singapore.add("Seoul");
 		singapore.add("Dubai");
 		db.put("Singapore",singapore);
 
 		List<String> seoul = new ArrayList<String>();
-		seoul.add("Singapore");
+//		seoul.add("Singapore");
 		seoul.add("Beijing");
 		db.put("Seoul",seoul);
 
 		List<String> beijing = new ArrayList<String>();
-		beijing.add("Seoul");
+//		beijing.add("Seoul");
 		beijing.add("Tokyo");
 		db.put("Beijing",beijing);
 
-		List<String> tokyo = new ArrayList<String>();
-		tokyo.add("Beijing");
-		db.put("Tokyo",tokyo);
+//		List<String> tokyo = new ArrayList<String>();
+//		tokyo.add("Beijing");
+//		db.put("Tokyo",tokyo);
 
 	}
 	public Paths(){
