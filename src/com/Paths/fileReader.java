@@ -9,7 +9,7 @@ public class fileReader {
 	public fileReader(String fileName){
 		this.file = fileName;
 	}
- 
+
 	public String readingOfFile()throws IOException{
 		fileReader reader = new fileReader(this.file);
 		File newfile = new File(this.file);
