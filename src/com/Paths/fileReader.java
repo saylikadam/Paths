@@ -27,7 +27,7 @@ public class fileReader {
 		return content;
 	}
 
-	public static Map<String, List<String>> getPathFromFile(String content){
+	public  Map<String, List<String>> getPathFromFile(String content){
 		Map<String, List<String>> fileDb = new HashMap<String, List<String>>();
 		String []lines = content.split("\r\n");
 		for(String line : lines){
